@@ -42,10 +42,6 @@ min_max_scaler = MinMaxScaler()
 X_train = min_max_scaler.fit_transform(X_train)
 X_test = min_max_scaler.transform(X_test)
 
-# 对训练集和测试集的目标变量进行归一化
-y_train = min_max_scaler.fit_transform(y_train)
-y_test = min_max_scaler.transform(y_test)
-
 # 初始化线性回归模型
 model = LinearRegression()
 
